@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "ElementPath",
+    "version": "1.0",
+
+    "description": "Generates CSS paths to every element on a webpage that can be discoverd by hovering.",
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": ["style.css"],
+            "js": ["findpaths.js"]
+        }
+    ]
+}
